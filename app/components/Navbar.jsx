@@ -42,7 +42,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Mobile menu */}
+                {/* Mobile navbar menu */}
 
                 <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 
                 top-0 bottom-0 w-64 z-50 h-screen bg-white shadow-xl text-black transition duration-500'>
