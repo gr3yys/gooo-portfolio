@@ -13,7 +13,7 @@ const About = () => {
             </div>
             <div className='flex-1'>
                 <p className='mb-10 max-w-2xl'>
-                    Hi, I'm Grey, a Computer Science student at the Interamerican University of Puerto Rico, Ponce Campus with a growing passion for data analytics. I’m currently expanding my knowledge through courses in data analysis, and visualization, building a strong foundation in turning data into actionable insights. As a motivated learner, I’m eager to develop my skills in tools like Python, SQL, Tableu, and Excel while exploring real-world applications of data analytics. Excited about the journey ahead and always open to new learning opportunities!
+                    Hi, I'm Grey, a Computer Science student at the Interamerican University of Puerto Rico, Ponce Campus with a growing passion for data analytics. I’m currently expanding my knowledge through courses in data analysis, and data visualization, building a strong foundation in turning data into actionable insights. As a motivated learner, I’m eager to develop my skills in tools like Python, SQL, Tableu, and Excel while exploring real-world applications of data analytics. Excited about the journey ahead and always open to new learning opportunities!
                 </p>
             </div>
         </div>

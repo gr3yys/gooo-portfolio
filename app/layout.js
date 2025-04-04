@@ -7,7 +7,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Portfolio - Greychel Ocasio Ortiz",
   description: "",
 };
 

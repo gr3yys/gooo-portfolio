@@ -19,12 +19,12 @@ const Navbar = () => {
             <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
             flex items-center justify-between z-50'>
                 <a href="#top">
-                    <Image src={assets.logo} alt='' width={60} className='cursor-pointer mr-14'/>
+                    <Image src={assets.logo} alt='' width={70} className='cursor-pointer mr-14'/>
                 </a>
  
                 <ul className='hidden md:flex items-center gap-6 lg:gap-8
                 px-12 py-3 bg-opacity-50'>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certificates">Certificates</a></li>
@@ -42,7 +42,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Mobile navbar menu */}
+                {/* Mobile navbar */}
 
                 <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 
                 top-0 bottom-0 w-64 z-50 h-screen bg-white shadow-xl text-black transition duration-500'>
@@ -51,7 +51,7 @@ const Navbar = () => {
                         <Image src={assets.close_black} alt='' className='w-5 cursor-pointer'/>
                     </div>
 
-                    <li><a onClick={closeMenu} href="#home">Home</a></li>
+                    <li><a onClick={closeMenu} href="#top">Home</a></li>
                     <li><a onClick={closeMenu} href="#about">About</a></li>
                     <li><a onClick={closeMenu} href="#projects">Projects</a></li>
                     <li><a onClick={closeMenu} href="#certificates">Certificates</a></li>
