@@ -11,8 +11,9 @@ const Certificates = () => {
           
           {/* Cert 1, 3 certs */}
           <div className='flex-1 flex flex-col items-center'>
-            <div className='flex items-center gap-4 mb-6'>
+            <div className='flex items-center gap-4'>   
               <div className="text-center">
+                <Image src={assets.merit_2022} alt='Merit Certificate' className='mb-6' />
                 <p className="text-xl text-semibold">Merit Certificates</p>
                 <p className="text-md font-semibold">UIPRP</p>
               </div>
@@ -21,8 +22,9 @@ const Certificates = () => {
 
           {/* Cert 2 */}
           <div className='flex-1 flex flex-col items-center'>
-            <div className='flex items-center gap-4 mb-6'>
+            <div className='flex items-center gap-4'>
               <div className="text-center">
+              <Image src={assets.cybersecurity_cert} alt='Cybersecurity Certificate' className='mb-6' />
                 <p className="text-xl">Google Cybersecurity</p>
                 <p className="text-md font-semibold">Coursera</p>
               </div>
@@ -31,8 +33,9 @@ const Certificates = () => {
 
           {/* Cert 3 */}
           <div className='flex-1 flex flex-col items-center'>
-            <div className='flex items-center gap-4 mb-6'>
+            <div className='flex items-center gap-4'>
               <div className="text-center">
+              <Image src={assets.ai_cert} alt='AI Essentials Certificate' className='mb-6' />
                 <p className="text-xl">Google AI Essentials</p>
                 <p className="text-md font-semibold">Coursera</p>
               </div>

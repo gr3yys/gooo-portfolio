@@ -34,6 +34,10 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import social_icon from './social-icon.png';
 import phone_icon from './phone-icon.png';
 import react from './react.svg';
+import merit_2022 from './merit-cert-2022.png';
+import merit_2023 from './merit-cert-2023.png';
+import cybersecurity_cert from './cybersecurity-cert.png';
+import ai_cert from './ai-cert.png';
 
 export const assets = {
     user_image,
@@ -71,7 +75,11 @@ export const assets = {
     right_arrow_bold_dark,
     social_icon,
     phone_icon,
-    react
+    react,
+    merit_2022,
+    merit_2023,
+    cybersecurity_cert,
+    ai_cert
 };
 
 export const infoList = [
