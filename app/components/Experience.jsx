@@ -15,7 +15,7 @@ const Experience = () => {
                 <Image src={assets.edu_icon} alt='' className='w-6'/>
               </div>
               <div className="text-left">
-                <p className="text-xl">2021 - 2025</p>
+                <p className="text-xl">August 2021 - May 2025</p>
                 <p className="text-xl">Inter American University of Puerto Rico</p>
                 <p className="text-md">Bachelor of Science in Computer Science</p>
               </div>
@@ -27,31 +27,24 @@ const Experience = () => {
                 <Image src={assets.edu_icon} alt='' className='w-6'/>
               </div>
               <div className='text-left'>
-                <p className='text-xl'>2024</p>
+                <p className='text-xl'>June 2024 - July 2024</p>
                 <p className='text-xl'>Coursera</p>
                 <p className='text-md'>Google Cybersecurity Certificate</p>
               </div>
             </div>
-              <div className='flex items-center gap-4 mb-6'>
-                <div>
-                  <Image src={assets.project_icon} alt='' className='w-6'/>
-                </div>
-              <div className='text-left items-center'>
-                <p className='text-xl'>2024 - 2025</p>
-                <p className='text-xl'>Secretary</p>
-                <p className='text-md'>Students Association of Computers and Technology</p>
-              </div>
-            </div>
+          </div>
 
-            {/* 2 Experience */}
+          <div className='flex-1'>
             <div className='flex items-center gap-4 mb-6'>
               <div>
                 <Image src={assets.project_icon} alt='' className='w-6'/>
               </div>
-              <div className='text-left items-center'>
-                <p className='text-xl'>2025</p>
-                <p className='text-xl'>Practicum</p>
-                <p className='text-md'>Dean of Students Department</p>
+              <div className="text-left">
+                <p className="text-xl">January 2025 - February 2025</p>
+                <p className="text-xl">Practicum - Inter American University of Puerto Rico</p>
+                <li className="text-md">Used MS Excel and Access to create and manage inventory.</li>
+                <li className="text-md">Developed a program for gown request using .NET and C#.</li>
+                <li className="text-md">Designed promotional materials using Canva.</li>
               </div>
             </div>
           </div>
