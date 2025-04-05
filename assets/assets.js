@@ -7,7 +7,10 @@ import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import figma from './figma.png';
+import canva from './canva-icon.png';
 import git from './git.png';
+import python from './python-icon.png';
+import cpp from './cpp-icon.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -29,6 +32,7 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import social_icon from './social-icon.png';
 import phone_icon from './phone-icon.png';
+import react from './react.svg';
 
 export const assets = {
     user_image,
@@ -40,7 +44,10 @@ export const assets = {
     project_icon_dark,
     vscode,
     figma,
+    canva,
     git,
+    python,
+    cpp,
     right_arrow_white,
     logo,
     logo_dark,
@@ -61,7 +68,8 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     social_icon,
-    phone_icon
+    phone_icon,
+    react
 };
 
 export const infoList = [
