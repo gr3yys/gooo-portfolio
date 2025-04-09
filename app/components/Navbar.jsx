@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='w-full fixed bg-[#dde4de] px-5 lg:px-8 xl:px-[8%]
+            <nav className='w-full fixed bg-[#253342] shadow-md px-5 lg:px-8 xl:px-[8%]
             flex items-center justify-between z-50'>
                 <a href="#top">
                     <Image src={assets.logo} alt='' width={70} className='cursor-pointer mr-14'/>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 {/* Mobile navbar */}
 
                 <ul ref={sideMenuRef} className={`flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 
-                    top-0 bottom-0 w-64 z-50 h-screen bg-[#dde4de] shadow-xl text-black transition-transform duration-500 
+                    top-0 bottom-0 w-64 z-50 h-screen bg-[#253342] shadow-xl text-white transition-transform duration-500 
                     ${isMenuOpen ? 'transform-none' : 'transform translate-x-full'}`}>
 
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
