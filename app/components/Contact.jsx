@@ -9,7 +9,7 @@ const Contact = () => {
 
         <div className='flex w-full flex-col lg:flex-row text-center items-center gap-20 my-20'>
             <div className='flex-1 flex flex-col items-center'>
-              <span className='flex text-center items-center gap-2'><Image src={assets.mail_icon} alt='mail' className='w-4'/>Email adress</span>
+              <span className='flex text-center items-center gap-2'><Image src={assets.mail_icon} alt='mail' className='w-4'/>Email address</span>
               <a href='mailto: greyocasio@gmail.com' className='cursor-pointer'>example@gmail.com</a>
             </div>
             <div className='flex-1 flex flex-col items-center'>
