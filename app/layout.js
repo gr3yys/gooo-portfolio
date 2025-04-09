@@ -1,9 +1,10 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
+// Define the Poppins font
 const poppins = Poppins({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
-  subsets: ["latin"],
+  weight: ['400', '500', '600'],
+  subsets: ['latin'],
 });
 
 export const metadata = {
@@ -12,11 +13,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // Ensure consistent class name on both client and server render
+  const poppinsClassName = poppins.className;
+
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${poppins.className} antialiased leading-8 overflow-x-hidden`}
-      >
+      <body className={`${poppinsClassName} antialiased leading-8 overflow-x-hidden`}>
         {children}
       </body>
     </html>
