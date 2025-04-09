@@ -17,7 +17,7 @@ const Header = () => {
         {/* <p className='max-w-2xl mx-auto'>Loprem Ipsum</p> */}
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             {/* <a href="#contact" className='px-10 py-3 border border-[#dde4de] rounded-full bg-[#dde4de] text-[#2d2d2d] flex items-center gap-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100'>contact me <Image src={assets.mail_outline} alt='' className='w-4'/> </a> */}
-            <a href="/gooo-resume.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100'>download resume<Image src={assets.download_icon} alt='download' className='w-4'/> </a>
+            <a href="/gooo-resume.pdf" download className='px-10 py-3 border rounded-full border-[white] flex items-center gap-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100'>download resume<Image src={assets.download_icon} alt='download' className='w-4'/> </a>
         </div>
     </div>
   )
