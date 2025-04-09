@@ -81,13 +81,12 @@ const Resume = () => {
     <div className='flex items-center justify-center py-10'>
         <div id='experience' className='w-full px-[12%] scroll-mt-20'>
             <h2 className='text-center text-5xl mb-20'>Experience</h2>
-            <Tabs defaultValue='Experience' className='flex flex-col xl:flex-row gap-[60px]'>
-                <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 
-                gap-6'>
-                <TabsTrigger value='education'>Education</TabsTrigger>
-                <TabsTrigger value='experience'>Experience</TabsTrigger>
-                <TabsTrigger value='skills'>Skills</TabsTrigger>
-            </TabsList>
+            <Tabs defaultValue='education' className='flex flex-col xl:flex-row gap-[60px]'>
+                <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6'>
+                    <TabsTrigger value='education'>Education</TabsTrigger>
+                    <TabsTrigger value='experience'>Experience</TabsTrigger>
+                    <TabsTrigger value='skills'>Skills</TabsTrigger>
+                </TabsList>
 
             <div className='w-full'>
                 {/* Education */}
@@ -97,11 +96,11 @@ const Resume = () => {
                             <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                                 {education.items.map((item, index) => {
                                     return (
-                                        <li key={index} className='bg-[#f4f4f4] h-[184px] py-10 rounded-xl flex flex-col justify-center items-center lg:items-start lg:px-10 gap-1'>
-                                            <span className='text-[#6da49a]'>{item.duration}</span>
+                                        <li key={index} className='bg-[#5d7692] h-[184px] py-10 rounded-xl flex flex-col justify-center items-center lg:items-start lg:px-10 gap-1'>
+                                            <span className='text-[#253342]'>{item.duration}</span>
                                             <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.degree}</h3>
                                             <div className='flex items-center gap-3'>
-                                                <span className='w-[6px] h-[6px] rounded-full bg-[#6da49a]'></span>
+                                                <span className='w-[6px] h-[6px] rounded-full bg-[#253342]'></span>
                                                 <p>{item.institution}</p>
                                             </div>
                                         </li>
@@ -118,11 +117,11 @@ const Resume = () => {
                             <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                                 {experience.items.map((item, index) => {
                                     return (
-                                        <li key={index} className='bg-[#f4f4f4] h-[184px] py-10 rounded-xl flex flex-col justify-center items-center lg:items-start lg:px-10 gap-1'>
-                                            <span className='text-[#6da49a]'>{item.duration}</span>
+                                        <li key={index} className='bg-[#5d7692] h-[184px] py-10 rounded-xl flex flex-col justify-center items-center lg:items-start lg:px-10 gap-1'>
+                                            <span className='text-[#253342]'>{item.duration}</span>
                                             <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.position}</h3>
                                             <div className='flex items-center gap-3'>
-                                                <span className='w-[6px] h-[6px] rounded-full bg-[#6da49a]'></span>
+                                                <span className='w-[6px] h-[6px] rounded-full bg-[#253342]'></span>
                                                 <p>{item.company}</p>
                                             </div>
                                         </li>
@@ -143,8 +142,8 @@ const Resume = () => {
                                 return <li key={index}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
-                                            <TooltipTrigger className='w-full h-[150px] bg-[#f4f4f4] rounded-xl flex justify-center items-center group]'>
-                                                <div className='text-6xl transition-all group-hover:text-[#dde4de] duration-300'>{skill.icon}</div>
+                                            <TooltipTrigger className='w-full h-[150px] bg-[#5d7692] rounded-xl flex justify-center items-center group]'>
+                                                <div className='text-6xl transition-all duration-300'>{skill.icon}</div>
                                             </TooltipTrigger>
                                             <TooltipContent>
                                                 <p className='capitalize'>{skill.name}</p>
@@ -158,7 +157,7 @@ const Resume = () => {
                 </TabsContent>
             </div>
 
-        </Tabs>
+            </Tabs>
     </div>
     </div>
   )
