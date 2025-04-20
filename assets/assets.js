@@ -17,10 +17,9 @@ import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import mail_outline from './mail-outline.png';
-import profile_img from './profile_img.jpg';
+import profile_img from './profile_img.png';
 import download_icon from './download-icon.png';
-import moon_icon from './moon_icon.png';
-import sun_icon from './sun_icon.png';
+import download_icon_white from './download-icon-white.png';
 import arrow_icon from './arrow-icon.png';
 import arrow_icon_dark from './arrow-icon-dark.png';
 import menu_black from './menu-black.png';
@@ -38,6 +37,15 @@ import merit_2022 from './merit-cert-2022.png';
 import merit_2023 from './merit-cert-2023.png';
 import cybersecurity_cert from './cybersecurity-cert.png';
 import ai_cert from './ai-cert.png';
+import github from './github-icon.png';
+import html_icon from './html-5.png';
+import css_icon from './css-3.png';
+import js_icon from './js.png';
+import nextjs_icon from './nextjs.png';
+import python_icon from './python.png';
+import tailwind from './Tailwind-Css.png';
+import project1 from './project1.png';
+import project2 from './project2.png';
 
 export const assets = {
     user_image,
@@ -61,8 +69,7 @@ export const assets = {
     mail_outline,
     profile_img,
     download_icon,
-    moon_icon,
-    sun_icon,
+    download_icon_white,
     arrow_icon,
     arrow_icon_dark,
     menu_black,
@@ -79,15 +86,14 @@ export const assets = {
     merit_2022,
     merit_2023,
     cybersecurity_cert,
-    ai_cert
+    ai_cert,
+    github,
+    html_icon,
+    css_icon,
+    js_icon,
+    nextjs_icon,
+    python_icon,
+    tailwind,
+    project1,
+    project2
 };
-
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
-];
-
-export const toolsData = [
-    assets.vscode, assets.figma, assets.git
-];
