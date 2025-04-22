@@ -9,12 +9,10 @@ const Navbar = () => {
 
     const openMenu = ()=>{
         setIsMenuOpen(true);
-        sideMenuRef.current.style.transform = 'translateX(0)'
     }
 
     const closeMenu = ()=>{
         setIsMenuOpen(false);
-        sideMenuRef.current.style.transform = 'translateX(16rem)'
     }
 
     return (
