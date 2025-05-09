@@ -37,6 +37,37 @@ const experience = {
     ]
 };
 
+const softSkills = {
+    title: "Soft skills",
+    softSkillsList: [
+        {
+            icon: assets.communication,
+            name: "Communication",
+            alt: "communication",
+        },
+        {
+            icon: assets.teamwork,
+            name: "Teamwork",
+            alt: "teamwork",
+        },
+        {
+            icon: assets.leadership,
+            name: "Leadership",
+            alt: "leadership",
+        },
+        {
+            icon: assets.time_management,
+            name: "Time Management",
+            alt: "time management",
+        },
+        {
+            icon: assets.problem_solving,
+            name: "Problem Solving",
+            alt: "problem solving",
+        },
+    ],
+};
+
 const skills = {
     title: "Skills",
     skillList: [
@@ -92,7 +123,8 @@ const Resume = () => {
                     <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6'>
                         <TabsTrigger value='education'>Education</TabsTrigger>
                         <TabsTrigger value='experience'>Experience</TabsTrigger>
-                        <TabsTrigger value='skills'>Skills</TabsTrigger>
+                        <TabsTrigger value='skills'>Technical skills</TabsTrigger>
+                        <TabsTrigger value='softSkills'>Soft kills</TabsTrigger>
                     </TabsList>
 
                     <div className='w-full'>
@@ -138,7 +170,7 @@ const Resume = () => {
                             </div>
                         </TabsContent>
 
-                        {/* Skills */}
+                        {/* Technical Skills */}
                         <TabsContent value="skills" className="w-full h-full">
                             <div className='flex flex-col gap-[30px]'>
                                 <div className='flex flex-col gap-[30px] text-center xl:text-left'>
@@ -160,6 +192,37 @@ const Resume = () => {
                                                     </TooltipTrigger>
                                                     <TooltipContent>
                                                         <p className='capitalize'>{skill.name}</p>
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </TabsContent>
+
+                        {/* Soft Skills */}
+                        <TabsContent value="softSkills" className="w-full h-full">
+                            <div className='flex flex-col gap-[30px]'>
+                                <div className='flex flex-col gap-[30px] text-center xl:text-left'>
+                                    <h3 className='text-4xl font-bold'>{softSkills.title}</h3>
+                                </div>
+                                <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]'>
+                                    {softSkills.softSkillsList.map((softSkills, index) => (
+                                        <li key={index}>
+                                            <TooltipProvider delayDuration={100}>
+                                                <Tooltip>
+                                                    <TooltipTrigger className='w-full h-[150px] bg-[#d0e4ee] rounded-xl flex justify-center items-center group'>
+                                                        <Image
+                                                            src={softSkills.icon}
+                                                            alt={softSkills.alt}
+                                                            width={64}
+                                                            height={64}
+                                                            className="transition-all duration-300 object-contain w-16 h-16"
+                                                        />
+                                                    </TooltipTrigger>
+                                                    <TooltipContent>
+                                                        <p className='capitalize'>{softSkills.name}</p>
                                                     </TooltipContent>
                                                 </Tooltip>
                                             </TooltipProvider>
