@@ -2,6 +2,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
+// Data for contact section
 const contactInfo = {
   info: [
     {
@@ -27,37 +28,49 @@ const contactInfo = {
   ],
 }
 
+// Contact component renders a "Contact Me" section with contact methods (e.g., email, LinkedIn)
+// and includes a footer at the bottom of the page.
 const Contact = () => {
   return (
-    <div id='contact' className='w-full px-[12%] scroll-mt-20'>
-      <h2 className='text-center text-5xl'>Contact me</h2>
+    <div id="contact" className="w-full px-[12%] scroll-mt-20">
+      {/* Section Title */}
+      <h2 className="text-center text-5xl">Contact me</h2>
 
-      <div className='flex w-full flex-col lg:flex-row text-center items-center gap-20 my-20'>
+      {/* Contact Info Cards */}
+      <div className="flex w-full flex-col lg:flex-row text-center items-center gap-20 my-20">
         {contactInfo.info.map((item, index) => (
-          <div key={index} className='flex-1 flex flex-col items-center'>
-            <span className='flex text-center items-center gap-2'>
-              <Image src={item.icon} alt={item.alt} className='w-4' />
+          <div key={index} className="flex-1 flex flex-col items-center">
+            {/* Contact Method Title with Icon */}
+            <span className="flex text-center items-center gap-2">
+              <Image src={item.icon} alt={item.alt} className="w-4" />
               {item.title}
             </span>
+
+            {/* Render as link if href is provided, otherwise just text */}
             {item.href ? (
-              <a href={item.href} className='cursor-pointer' target='_blank' rel='noopener noreferrer'>
+              <a
+                href={item.href}
+                className="cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {item.contact}
               </a>
             ) : (
-              <p className='cursor-pointer'>{item.contact}</p>
+              <p className="cursor-pointer">{item.contact}</p>
             )}
           </div>
         ))}
       </div>
 
-      {/* Footer */}
-      <div className='items-center text-center mb-6'>
-        <p className='text-xs'>
+      {/* Footer Section */}
+      <div className="items-center text-center mb-6">
+        <p className="text-xs">
           &copy; 2025 All rights reserved. Developed by Greychel Ocasio Ortiz
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
