@@ -1,45 +1,41 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React, { useRef, useState} from 'react'
+import React, { useRef, useState } from 'react'
 
 const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const sideMenuRef = useRef();
 
-    const openMenu = ()=>{
+    const openMenu = () => {
         setIsMenuOpen(true);
     }
 
-    const closeMenu = ()=>{
+    const closeMenu = () => {
         setIsMenuOpen(false);
     }
 
     return (
         <>
-            {/* <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
-                <Image src={assets.bg} alt='bg' className='w-full' />
-            </div> */}
-
             <nav className='w-full bg-white shadow-md fixed px-5 lg:px-8 xl:px-[8%]
             flex items-center justify-between z-50'>
                 <a href="#top">
-                    <Image src={assets.logo} alt='' width={70} className='cursor-pointer mr-14'/>
+                    <Image src={assets.logo} alt='' width={70} className='cursor-pointer mr-14' />
                 </a>
- 
+
                 <ul className='hidden md:flex items-center gap-6 lg:gap-8
                 px-12 py-3 bg-opacity-50'>
-                    <li><a href="#top" className='hover:opacity-75'>Home</a></li>
-                    <li><a href="#about" className='hover:opacity-75'>About</a></li>
-                    <li><a href="#experience" className='hover:opacity-75'>Resume</a></li>
-                    <li><a href="#projects" className='hover:opacity-75'>Projects</a></li>
-                    <li><a href="#certificates" className='hover:opacity-75'>Certificates</a></li>
+                    <li><a href="#top" className='hover:text-[#A1BCC8]'>Home</a></li>
+                    <li><a href="#about" className='hover:text-[#A1BCC8]'>About</a></li>
+                    <li><a href="#experience" className='hover:text-[#A1BCC8]'>Resume</a></li>
+                    <li><a href="#projects" className='hover:text-[#A1BCC8]'>Projects</a></li>
+                    <li><a href="#certificates" className='hover:text-[#A1BCC8]'>Certificates</a></li>
                 </ul>
 
                 <div className='flex items-center gap-4'>
                     <a href="#contact" className='hidden lg:flex 
                     items-center gap-3 px-10 py-2.5 
-                    rounded-full ml-4'>Contact<Image src={assets.contact_mail} alt='contact mail icon' className='w-6' />
+                    rounded-full ml-4 hover:text-[#A1BCC8]'>Contact<Image src={assets.contact_mail} alt='contact mail icon' className='w-6' />
                     </a>
 
                     <button className='block md:hidden ml-3' onClick={openMenu}>
@@ -53,15 +49,15 @@ const Navbar = () => {
                     ${isMenuOpen ? 'transform-none' : 'transform translate-x-full'}`}>
 
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
-                        <Image src={assets.close_black} alt='' className='w-5 cursor-pointer'/>
+                        <Image src={assets.close_black} alt='' className='w-5 cursor-pointer' />
                     </div>
 
-                    <li><a onClick={closeMenu} href="#top" className='hover:opacity-75'>Home</a></li>
-                    <li><a onClick={closeMenu} href="#about" className='hover:opacity-75'>About</a></li>
-                    <li><a onClick={closeMenu} href="#experience" className='hover:opacity-75'>Resume</a></li>
-                    <li><a onClick={closeMenu} href="#projects" className='hover:opacity-75'>Projects</a></li>
-                    <li><a onClick={closeMenu} href="#certificates" className='hover:opacity-75'>Certificates</a></li>
-                    <li><a onClick={closeMenu} href="#contact" className='hover:opacity-75'>Contact</a></li>
+                    <li><a onClick={closeMenu} href="#top" className='hover:text-[#A1BCC8]'>Home</a></li>
+                    <li><a onClick={closeMenu} href="#about" className='hover:text-[#A1BCC8]'>About</a></li>
+                    <li><a onClick={closeMenu} href="#experience" className='hover:text-[#A1BCC8]'>Resume</a></li>
+                    <li><a onClick={closeMenu} href="#projects" className='hover:text-[#A1BCC8]'>Projects</a></li>
+                    <li><a onClick={closeMenu} href="#certificates" className='hover:text-[#A1BCC8]'>Certificates</a></li>
+                    <li><a onClick={closeMenu} href="#contact" className='hover:text-[#A1BCC8]'>Contact</a></li>
                 </ul>
 
             </nav>
