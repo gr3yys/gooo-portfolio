@@ -1,190 +1,3 @@
-// import { assets } from '@/assets/assets'
-// import Image from 'next/image'
-// import React from 'react'
-
-// const certificates = {
-//   items: [
-//     {
-//       name: 'Merit Certificate 2022',
-//       institution: 'UIPR',
-//       image: assets.merit_2022,
-//       alt: 'Merit Certificate',
-//     },
-//     {
-//       name: 'Merit Certificate 2023',
-//       institution: 'UIPR',
-//       image: assets.merit_2023,
-//       alt: 'Merit Certificate',
-//     },
-//     {
-//       name: 'Merit Certificate 2024',
-//       institution: 'UIPR',
-//       image: assets.merit_2024,
-//       alt: 'Merit Certificate',
-//     },
-//     {
-//       name: 'Google Cybersecurity',
-//       institution: 'Coursera',
-//       image: assets.cybersecurity_cert,
-//       alt: 'Cybersecurity Certificate',
-//     },
-//     {
-//       name: 'Google AI Essentials',
-//       institution: 'Coursera',
-//       image: assets.ai_cert,
-//       alt: 'AI Essentials Certificate',
-//     },
-//   ]
-// };
-
-// const Certificates = () => {
-//   return (
-//     <div id='certificates' className='w-full px-[12%] py-20 scroll-mt-20'>
-//       <h2 className='text-center text-5xl'>My Certificates</h2>
-
-//       <div className='flex w-full flex-col lg:flex-row text-center items-center gap-20 my-20'>
-//         {certificates.items.map((cert, index) => (
-//           <div key={index} className='flex-1 flex flex-col items-center'>
-//             <div className='flex items-center gap-4'>
-//               <div className="text-center">
-//                 <Image src={cert.image} alt={cert.alt} className='mb-6' />
-//                 <p className="text-xl font-semibold">{cert.name}</p>
-//                 <p className="text-md font-semibold">{cert.institution}</p>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Certificates
-// import { assets } from '@/assets/assets';
-// import Image from 'next/image';
-// import React, { useState } from 'react';
-
-// const certificates = {
-//   items: [
-//     {
-//       name: 'Merit Certificate 2022',
-//       institution: 'UIPR',
-//       image: assets.merit_2022,
-//       alt: 'Merit Certificate',
-//     },
-//     {
-//       name: 'Merit Certificate 2023',
-//       institution: 'UIPR',
-//       image: assets.merit_2023,
-//       alt: 'Merit Certificate',
-//     },
-//     {
-//       name: 'Merit Certificate 2024',
-//       institution: 'UIPR',
-//       image: assets.merit_2024,
-//       alt: 'Merit Certificate',
-//     },
-//     {
-//       name: 'Google Cybersecurity',
-//       institution: 'Coursera',
-//       image: assets.cybersecurity_cert,
-//       alt: 'Cybersecurity Certificate',
-//     },
-//     {
-//       name: 'Google AI Essentials',
-//       institution: 'Coursera',
-//       image: assets.ai_cert,
-//       alt: 'AI Essentials Certificate',
-//     },
-//   ],
-// };
-
-// // Filter out only merit certificates
-// const meritCertificates = certificates.items.filter(cert => cert.name.includes('Merit Certificate'));
-
-// // Filter out other certificates (Google Cybersecurity and AI Essentials)
-// const otherCertificates = certificates.items.filter(cert => !cert.name.includes('Merit Certificate'));
-
-// const Certificates = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   // Function to go to the next slide
-//   const nextSlide = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex + 1) % meritCertificates.length);
-//   };
-
-//   // Function to go to the previous slide
-//   const prevSlide = () => {
-//     setCurrentIndex(
-//       (prevIndex) => (prevIndex - 1 + meritCertificates.length) % meritCertificates.length
-//     );
-//   };
-
-//   // Function to go to a specific slide using the dot
-//   const goToSlide = (index) => {
-//     setCurrentIndex(index);
-//   };
-
-//   return (
-//     <div id="certificates" className="w-full px-[12%] py-20 scroll-mt-20">
-//       <h2 className="text-center text-5xl">My Certificates</h2>
-
-//       <div className="my-20 flex flex-wrap justify-between">
-//         {/* Merit Certificates Carousel */}
-//         <div className="w-full lg:w-2/3 mb-12 lg:mb-0">
-//           <h3 className="text-center text-3xl mb-6">Merit Certificates</h3>
-
-//           {/* Carousel */}
-//           <div className="relative">
-//             <div className="flex justify-center items-center">
-
-//               <div className="flex justify-center items-center">
-//                 <Image
-//                   src={meritCertificates[currentIndex].image}
-//                   alt={meritCertificates[currentIndex].alt}
-//                   className="mb-6"
-//                   width={300}
-//                   height={200}
-//                 />
-//               </div>
-//             </div>
-
-//             {/* Dots */}
-//             <div className="flex justify-center mt-4">
-//               {meritCertificates.map((_, index) => (
-//                 <button
-//                   key={index}
-//                   onClick={() => goToSlide(index)}
-//                   className={`w-2 h-2 mx-2 rounded-full ${index === currentIndex ? 'bg-[#d0e4ee]' : 'bg-gray-400'}`}
-//                 ></button>
-//               ))}
-//             </div>
-
-//             {/* Other Certs */}
-//             <div className="flex w-full flex-col lg:flex-row text-center items-center gap-20 my-20">
-//             {otherCertificates.map((cert, index) => (
-//               <div key={index} className="flex flex-col items-center">
-//                 <Image
-//                   src={cert.image}
-//                   alt={cert.alt}
-//                   className="mb-4"
-//                   width={300}
-//                   height={200}
-//                 />
-//                 <p className="text-xl font-semibold">{cert.name}</p>
-//                 <p className="text-md font-semibold">{cert.institution}</p>
-//               </div>
-//             ))}
-//           </div>
-
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Certificates;
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -224,10 +37,10 @@ const certificates = {
   ],
 };
 
-// Filter out only merit certificates
+// Filter only merit certificates
 const meritCertificates = certificates.items.filter(cert => cert.name.includes('Merit Certificate'));
 
-// Filter out other certificates (Google Cybersecurity and AI Essentials)
+// Filter other certificates
 const otherCertificates = certificates.items.filter(cert => !cert.name.includes('Merit Certificate'));
 
 const Certificates = () => {
@@ -245,7 +58,7 @@ const Certificates = () => {
     );
   };
 
-  // Function to go to a specific slide using the dot
+  // Function to go to a specific slide 
   const goToSlide = (index) => {
     setCurrentIndex(index);
   };
