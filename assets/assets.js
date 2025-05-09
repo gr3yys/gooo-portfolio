@@ -1,4 +1,5 @@
-import user_image from './user-image.jpg';
+import bg from './bg.png';
+import contact_mail from './contact-mail.png'
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -35,6 +36,7 @@ import phone_icon from './phone-icon.png';
 import react from './react.svg';
 import merit_2022 from './merit-cert-2022.png';
 import merit_2023 from './merit-cert-2023.png';
+import merit_2024 from './merit-cert-2024.png';
 import cybersecurity_cert from './cybersecurity-cert.png';
 import ai_cert from './ai-cert.png';
 import github from './github-icon.png';
@@ -46,9 +48,17 @@ import python_icon from './python.png';
 import tailwind from './Tailwind-Css.png';
 import project1 from './project1.png';
 import project2 from './project2.png';
+import project3 from './project3.png';
+import project4 from './project4.png';
+import time_management from './time.png';
+import problem_solving from './problem-solving.png';
+import teamwork from './teamwork.png';
+import leadership from './leadership.png';
+import communication from './communication.png';
 
 export const assets = {
-    user_image,
+    bg,
+    contact_mail,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -85,6 +95,7 @@ export const assets = {
     react,
     merit_2022,
     merit_2023,
+    merit_2024,
     cybersecurity_cert,
     ai_cert,
     github,
@@ -95,5 +106,12 @@ export const assets = {
     python_icon,
     tailwind,
     project1,
-    project2
+    project2,
+    project3,
+    project4,
+    time_management,
+    problem_solving,
+    leadership,
+    teamwork,
+    communication
 };
