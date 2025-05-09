@@ -38,7 +38,7 @@ const projectsList = {
       description: 'JS | Next.Js | React',
       icon: assets.github,
       alt: 'Github Icon',
-      href: 'https://github.com/gr3yys/Portfolio/',
+      href: 'https://gooo-portfolio.vercel.app',
     },
   ]
 };
