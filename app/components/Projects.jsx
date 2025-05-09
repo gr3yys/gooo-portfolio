@@ -46,28 +46,31 @@ const projectsList = {
 const Projects = () => {
   return (
     <div id='projects' className='w-full px-[12%] py-20 scroll-mt-20 bg-[#d0e4ee]'>
-      <h2 className='text-center text-5xl mb-20'>My Projects</h2>
+      <h2 className='text-center text-5xl mb-12'>My Projects</h2>
 
-      {/* Card Container */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 justify-items-center'>
-        {projectsList.projects.map((project, index) => (
-          <div key={index} className='max-w-60 h-[350px] rounded-sm p-3 relative bg-[#a1bcc8]'>
-            <div className='w-full h-[60%] rounded-sm'>
-            <Image src={project.image} alt={project.alternate} />
+      {/* Flex wrapper */}
+      <div className='flex flex-col justify-center items-center min-h-[60vh]'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 justify-items-center'>
+          {projectsList.projects.map((project, index) => (
+            <div key={index} className='max-w-60 h-[350px] rounded-sm p-3 relative bg-[#a1bcc8]'>
+              <div className='w-full h-[60%] rounded-sm'>
+                <Image src={project.image} alt={project.alternate} />
+              </div>
+              <div className='pt-7'>
+                <p className='font-bold leading-6'>{project.title}</p>
+                <p className='pb-4 text-sm'>{project.description}</p>
+                <a href={project.href} target='_blank' rel='noreferrer' className='px-12 rounded-sm bg-white text-[#253342] flex items-center gap-2'>
+                  <Image src={project.icon} alt={project.alt} className='w-4' />
+                  View Code
+                </a>
+              </div>
             </div>
-            <div className='pt-7'>
-              <p className='font-bold leading-6'>{project.title}</p>
-              <p className='pb-4 text-sm'>{project.description}</p>
-              <a href={project.href} target='_blank' rel='noreferrer' className='px-12 rounded-sm bg-white text-[#253342] flex items-center gap-2'>
-                <Image src={project.icon} alt={project.alt} className='w-4' />
-                View Code
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
+
 
 export default Projects
