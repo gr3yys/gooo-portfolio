@@ -7,15 +7,14 @@ const intro = {
     name: 'Greychel',
     last: 'Ocasio Ortiz',
     ocupation: 'Computer Science Student',
-    btn: 'Download Resume',
-    btnM: 'Resume',
+    btn: 'Resume',
     icon: assets.download_icon,
     alt: 'Download icon',
   },
 };
 
 const Header = () => {
-  const { name, last, ocupation, btn, btnM, icon, alt } = intro.items;
+  const { name, last, ocupation, btn, icon, alt } = intro.items;
 
   return (
     <div className="w-screen h-screen pt-16 flex flex-col md:flex-row relative overflow-hidden">
@@ -45,7 +44,7 @@ const Header = () => {
                 download
                 className="px-8 py-3  bg-[#d0e4ee] flex items-center gap-2 transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#A1BCC8] text-black"
               >
-                {btnM}
+                {btn}
                 <Image src={icon} alt={alt} className="w-4" />
               </a>
               <a href="https://github.com/gr3yys" target="_blank" 
