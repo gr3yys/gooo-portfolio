@@ -1,10 +1,7 @@
-"use client"
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
 import React from 'react'
 
 const about = {
-    description: "I'm a Computer Science student at the Inter American University of Puerto Rico, Ponce Campus with a growing passion for data analytics. I’m currently expanding my knowledge through courses in data analysis, and data visualization, building a strong foundation in turning data into actionable insights. As a motivated learner, I’m eager to develop my skills in tools like Python, SQL, Tableu, and Excel while exploring real-world applications of data analytics. Excited about the journey ahead and always open to new learning opportunities."
+    description: "I am a student at the Interamerican University of Puerto Rico, Ponce Campus. I am currently in my last year of my bachelor's degree in Computer Science. My interests are in graphic design, programming and data analysis. Currently, I am taking courses in data analysis, where I have begun to master tools such as Python, SQL, Excel and Tableau. During my studies, I have done academic and personal projects, where I have applied my knowledge in programming languages such as C++, Visual Basic, C# and JavaScript. My areas of interest in Computer Science include Cybersecurity, UI/UX, Data Analytics and Data Science.",
 };
 
 const About = () => {
@@ -13,12 +10,7 @@ const About = () => {
         <h2 className='text-center text-5xl'>About me</h2>
     
         <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-10'>
-            <div className='w-full max-w-xs sm:max-w-sm md:max-w lg:max-w xl:max-w-[400px]'>
-                <Image src={assets.user_image} alt='user' className='w-full'/>
-            </div>
-            <div className='flex-1'>
-                <p className='max-w-2xl'>{about.description}</p>
-            </div>
+            <p className='w-full'>{about.description}</p>
         </div>
     </div>
   )
