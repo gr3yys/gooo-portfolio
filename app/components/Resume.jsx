@@ -182,10 +182,14 @@ const Resume = () => {
                         <TabsContent value="skills" className="w-full h-full">
                             <div className='flex flex-col gap-[30px]'>
                                 <div className='flex flex-col gap-[30px] text-center xl:text-left'>
-                                    <h3 className='text-4xl font-bold'>{skills.title}</h3>
+                                    <h3 className='text-4xl font-bold mb-8'>{skills.title}</h3>
                                 </div>
                                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]'>
-                                    {skills.skillList.map((skill, index) => (
+                                {skills.skillList.map((skill, index) => {
+                                    const isFirstRow = index < 4;
+                                    const side = isFirstRow ? "top" : "bottom";
+
+                                    return (
                                         <li key={index}>
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
@@ -198,13 +202,14 @@ const Resume = () => {
                                                             className="transition-all duration-300 object-contain w-16 h-16"
                                                         />
                                                     </TooltipTrigger>
-                                                    <TooltipContent>
+                                                    <TooltipContent side={side}>
                                                         <p className='capitalize'>{skill.name}</p>
                                                     </TooltipContent>
                                                 </Tooltip>
                                             </TooltipProvider>
                                         </li>
-                                    ))}
+                                    );
+                                })}
                                 </ul>
                             </div>
                         </TabsContent>
@@ -213,10 +218,15 @@ const Resume = () => {
                         <TabsContent value="softSkills" className="w-full h-full">
                             <div className='flex flex-col gap-[30px]'>
                                 <div className='flex flex-col gap-[30px] text-center xl:text-left'>
-                                    <h3 className='text-4xl font-bold'>{softSkills.title}</h3>
+                                    <h3 className='text-4xl font-bold mb-8'>{softSkills.title}</h3>
                                 </div>
                                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]'>
-                                    {softSkills.softSkillsList.map((skill, index) => (
+                                    {softSkills.softSkillsList.map((skill, index) => {
+
+                                    const isFirstRow = index < 4; 
+                                    const side = isFirstRow ? "top" : "bottom";
+
+                                    return (
                                         <li key={index}>
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
@@ -229,13 +239,14 @@ const Resume = () => {
                                                             className="transition-all duration-300 object-contain w-16 h-16"
                                                         />
                                                     </TooltipTrigger>
-                                                    <TooltipContent>
+                                                    <TooltipContent side={side}>
                                                         <p className='capitalize'>{skill.name}</p>
                                                     </TooltipContent>
                                                 </Tooltip>
                                             </TooltipProvider>
                                         </li>
-                                    ))}
+                                    );
+                                })}
                                 </ul>
                             </div>
                         </TabsContent>
