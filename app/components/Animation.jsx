@@ -32,7 +32,7 @@ const Animation = () => {
         // The animation function: types the code, then backspaces it
         async function typeAndBackspace() {
             while (true) {
-                // ======= Typing Effect =======
+                // Typing Effect
                 let content = '';
                 htmlIndex = 0;
                 isTag = false;
@@ -62,7 +62,7 @@ const Animation = () => {
 
                 await sleep(600); // short pause after fully typed
 
-                // ======= Backspacing Effect =======
+                // Backspacing Effect 
                 let plainIndex = plainText.length;
                 while (plainIndex > 0) {
                     plainIndex--;
@@ -99,7 +99,7 @@ const Animation = () => {
 
     return (
         <div className="flex justify-center items-center m-0 font-mono">
-            <div className="w-[500px] bg-[#2b2b3c] rounded-lg overflow-hidden shadow-lg">
+            <div className="sm:text-left min-w-[350px] lg:w-[500px] bg-[#2b2b3c] rounded-lg overflow-hidden shadow-lg">
                 {/* Top bar with window controls */}
                 <div className="bg-[#1e1e2f] text-white p-3 text-sm flex items-center">
                     <div className="flex space-x-2">
