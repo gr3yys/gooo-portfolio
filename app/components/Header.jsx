@@ -33,7 +33,7 @@ const Header = () => {
         />
 
         {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="absolute inset-0 bg-black/50 md:hidden z-10" />
 
         {/* Text content overlay for mobile view */}
         <div className="absolute inset-0 flex items-center justify-center text-white md:hidden p-4">
