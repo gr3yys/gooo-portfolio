@@ -7,7 +7,7 @@ const intro = {
   items: {
     name: 'Greychel',
     last: 'Ocasio',
-    ocupation: 'Front-end developer',
+    occupation: 'Front-end developer',
     btn: 'Resume',
     icon: assets.download_icon,
     alt: 'Download icon',
@@ -17,7 +17,7 @@ const intro = {
 // Header component displays a full-screen hero section with name, occupation,
 // resume download, GitHub link, and a bg image
 const Header = () => {
-  const { name, last, ocupation, btn, icon, alt } = intro.items;
+  const { name, last, occupation, btn, icon, alt } = intro.items;
 
   return (
     <div className="w-screen h-screen pt-16 flex flex-col md:flex-row relative overflow-hidden">
@@ -27,8 +27,8 @@ const Header = () => {
         <Image
           src={assets.profile_img}
           alt="Profile"
+          fill
           className="w-full h-full object-cover block"
-          layout="fill"
           priority // Optimizes loading for the hero image
         />
 
@@ -41,7 +41,7 @@ const Header = () => {
             <h1 className="text-4xl sm:text-6xl lg:text-[66px]">{name}</h1>
             <h1 className="text-4xl sm:text-6xl lg:text-[66px]">{last}</h1>
 
-            <h3 className="text-xl mt-2">{ocupation}</h3>
+            <h3 className="text-xl mt-2">{occupation}</h3>
 
             {/* Buttons: Resume download and GitHub */}
             <div className="grid justify-center items-center gap-4 mt-4">
@@ -57,6 +57,7 @@ const Header = () => {
               <a
                 href="https://github.com/gr3yys"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="px-10 py-3 text-black bg-[#d0e4ee] rounded flex justify-center items-center gap-2 transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#A1BCC8]"
               >
                 <Image src={assets.github} alt='github' className='w-4 m-2' />
@@ -71,7 +72,7 @@ const Header = () => {
         <div className="p-20 text-left">
           <h1 className="text-3xl sm:text-6xl lg:text-[66px] pb-4">{name}</h1>
           <h1 className="text-3xl sm:text-6xl lg:text-[66px] pb-4">{last}</h1>
-          <h3 className="flex items-end gap-2 text-xl md:text-lg mb-3">{ocupation}</h3>
+          <h3 className="flex items-end gap-2 text-xl md:text-lg mb-3">{occupation}</h3>
 
           {/* Buttons: Resume download and GitHub */}
           <div className="flex items-center gap-4 mt-4">
@@ -87,6 +88,7 @@ const Header = () => {
             <a
               href="https://github.com/gr3yys"
               target="_blank"
+              rel="noopener noreferrer"
               className="px-10 py-3 bg-[#d0e4ee] flex items-center gap-2 transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#A1BCC8]"
             >
               Github
