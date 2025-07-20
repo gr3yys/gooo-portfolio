@@ -2,7 +2,7 @@ import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-// Static certificate data, includes both merit and other types of certificates
+// certificate data 
 const certificates = {
   items: [
     {
@@ -38,17 +38,17 @@ const certificates = {
   ],
 };
 
-// Separate merit certificates for carousel
+//  merit certificates for carousel
 const meritCertificates = certificates.items.filter(cert => cert.name.includes('Merit Certificate'));
 
-// Separate other (non-merit) certificates
+// other certificates
 const otherCertificates = certificates.items.filter(cert => !cert.name.includes('Merit Certificate'));
 
 const Certificates = () => {
   // State to track which merit certificate is currently shown in the carousel
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Advance to the next certificate in the carousel
+  // Go to the next certificate in the carousel
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % meritCertificates.length);
   };
@@ -60,7 +60,7 @@ const Certificates = () => {
     );
   };
 
-  // Go directly to a specific slide by index (used for dot navigation)
+  // Go to a specific slide by index
   const goToSlide = (index) => {
     setCurrentIndex(index);
   };
@@ -74,9 +74,9 @@ const Certificates = () => {
         {/* Container for all certificates */}
         <div className="flex w-full flex-col lg:flex-row text-center items-center gap-20 my-20">
 
-          {/* MERIT CERTIFICATES - Displayed in a basic carousel */}
+          {/* MERIT CERTIFICATES */}
           <div className="flex flex-col items-center">
-            {/* Currently selected certificate image */}
+            {/* Currently selected certificate */}
             <Image
               src={meritCertificates[currentIndex].image}
               alt={meritCertificates[currentIndex].alt}
@@ -85,7 +85,7 @@ const Certificates = () => {
               height={200}
             />
 
-            {/* Carousel Dots */}
+            {/* Carousel Index */}
             <div className="flex mb-4 justify-center">
               {meritCertificates.map((_, index) => (
                 <button
