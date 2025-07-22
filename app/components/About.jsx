@@ -4,10 +4,9 @@ import Animation from './Animation';
 // About section content stored in a constant object
 const about = {
   description:
-    "I am a recent graduate from the Interamerican University of Puerto Rico, Ponce Campus. I completed a bachelor's degree in Computer Science, and my interests are in graphic design, programming and front-end development.",
+    "I'm a recent Computer Science graduate from the Interamerican University of Puerto Rico, Ponce Campus, with a strong interest in front-end development, programming, and graphic design. I'm dedicated, hardworking, and eager to gain hands-on experience in a dynamic and creative environment. I'm always looking for ways to grow, improve, and take on new challenges. Fluent in both Spanish and English, I bring strong communication skills that help me collaborate effectively with diverse teams.",
 };
 
-// Functional component that renders the About section
 const About = () => {
   return (
     <div

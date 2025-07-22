@@ -1,7 +1,5 @@
 import bg from './bg.png';
 import contact_mail from './contact-mail.png'
-import code_icon from './code-icon.png';
-import code_icon_dark from './code-icon-dark.png';
 import vscode from './vscode.png';
 import figma from './figma.png';
 import canva from './canva-icon.png';
@@ -11,8 +9,6 @@ import cpp from './cpp-icon.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
-import mail_icon_dark from './mail_icon_dark.png';
-import mail_outline from './mail-outline.png';
 import header_img from './header-img.png';
 import profile_img_sm from './profile_img_sm.png';
 import download_icon from './download-icon.png';
@@ -49,8 +45,6 @@ import communication from './communication.png';
 export const assets = {
     bg,
     contact_mail,
-    code_icon,
-    code_icon_dark,
     vscode,
     figma,
     canva,
@@ -60,8 +54,6 @@ export const assets = {
     logo,
     logo_dark,
     mail_icon,
-    mail_icon_dark,
-    mail_outline,
     header_img,
     profile_img_sm,
     download_icon,
