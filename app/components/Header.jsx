@@ -28,7 +28,7 @@ const Header = () => {
         {/* Desktop Background Image (md and up) */}
         <div className="hidden md:block w-full h-full relative">
           <Image
-            src={assets.header_img}
+            src={assets.profile_img_sm}
             alt="Profile"
             fill
             className="w-full h-full object-cover block"
@@ -50,6 +50,7 @@ const Header = () => {
 
             {/* Name & Occupation */}
             <div>
+              <h1 className='pb-2 text-gray-100'>Hello, I'm</h1>
               <h1 className="text-4xl sm:text-6xl lg:text-[66px]">{name}</h1>
               <h3 className="text-xl mt-4">{occupation}</h3>
             </div>

@@ -14,7 +14,7 @@ const About = () => {
       className='h-auto w-full px-4 sm:px-8 md:px-12 scroll-mt-20 py-10'
     >
       {/* Section title */}
-      <h2 className='text-center text-5xl my-20'>About me</h2>
+      <h2 className='text-center text-5xl my-20 tracking-wide'>About me</h2>
 
       {/* Flex container for animation and text */}
       <div className='flex flex-col justify-center lg:flex-row items-center my-20 gap-10'>
