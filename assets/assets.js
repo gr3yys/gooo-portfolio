@@ -2,35 +2,25 @@ import bg from './bg.png';
 import contact_mail from './contact-mail.png'
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
-import edu_icon from './edu-icon.png';
-import edu_icon_dark from './edu-icon-dark.png';
-import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import figma from './figma.png';
 import canva from './canva-icon.png';
 import git from './git.png';
 import python from './python-icon.png';
 import cpp from './cpp-icon.png';
-import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import mail_outline from './mail-outline.png';
-import profile_img from './profile_img.png';
+import header_img from './header-img.png';
+import profile_img_sm from './profile_img_sm.png';
 import download_icon from './download-icon.png';
 import download_icon_white from './download-icon-white.png';
-import arrow_icon from './arrow-icon.png';
-import arrow_icon_dark from './arrow-icon-dark.png';
 import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import right_arrow from './right-arrow.png';
-import send_icon from './send-icon.png';
-import right_arrow_bold from './right-arrow-bold.png';
-import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import social_icon from './social-icon.png';
 import phone_icon from './phone-icon.png';
 import react from './react.svg';
@@ -61,35 +51,25 @@ export const assets = {
     contact_mail,
     code_icon,
     code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
     vscode,
     figma,
     canva,
     git,
     python,
     cpp,
-    right_arrow_white,
     logo,
     logo_dark,
     mail_icon,
     mail_icon_dark,
     mail_outline,
-    profile_img,
+    header_img,
+    profile_img_sm,
     download_icon,
     download_icon_white,
-    arrow_icon,
-    arrow_icon_dark,
     menu_black,
     menu_white,
     close_black,
     close_white,
-    right_arrow,
-    send_icon,
-    right_arrow_bold,
-    right_arrow_bold_dark,
     social_icon,
     phone_icon,
     react,

@@ -32,9 +32,9 @@ const contactInfo = {
 // and includes a footer at the bottom of the page.
 const Contact = () => {
   return (
-    <div id="contact" className="w-full px-[12%] scroll-mt-20">
+    <div id="contact" className="w-full px-[12%] mt-20">
       {/* Section Title */}
-      <h2 className="text-center text-5xl">Contact me</h2>
+      <h2 className="text-center text-5xl tracking-wide">Contact me</h2>
 
       {/* Contact Info Cards */}
       <div className="flex w-full flex-col lg:flex-row text-center items-center gap-20 my-20">

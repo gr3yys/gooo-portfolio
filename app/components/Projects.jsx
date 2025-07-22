@@ -36,7 +36,7 @@ const projectsList = {
       image: assets.project4,
       alternate: 'portfolio project image',
       title: 'Portfolio Website',
-      description: 'JS | Next.Js | React',
+      description: 'JS | Next js',
       icon: assets.github,
       alt: 'Github Icon',
       href: 'https://gooo-portfolio.vercel.app',
@@ -44,12 +44,11 @@ const projectsList = {
   ]
 };
 
-// Projects component renders a responsive grid of portfolio projects with images, descriptions, and GitHub links
 const Projects = () => {
   return (
-    <div id='projects' className='w-full px-[12%] py-20 scroll-mt-20 bg-[#d0e4ee]'>
+    <div id='projects' className='w-full px-[12%] py-20 scroll-mt-20'>
       {/* Section Title */}
-      <h2 className='text-center text-5xl mb-12'>My Projects</h2>
+      <h2 className='text-center text-5xl tracking-wide mb-12'>My Projects</h2>
 
       {/* Projects Grid Container */}
       <div className='flex flex-col justify-center items-center min-h-[60vh]'>
@@ -59,7 +58,7 @@ const Projects = () => {
           {projectsList.projects.map((project, index) => (
             <div
               key={index}
-              className='max-w-60 h-[350px] rounded-sm p-3 relative bg-[#a1bcc8]'
+              className='max-w-60 h-[350px] rounded-sm p-3 relative bg-[#222222] shadow-xl'
             >
               {/* Project Image */}
               <div className='w-full h-[60%] rounded-sm'>
@@ -76,10 +75,10 @@ const Projects = () => {
                   href={project.href}
                   target='_blank'
                   rel='noreferrer'
-                  className='px-12 rounded-sm bg-white text-[#253342] flex items-center gap-2'
+                  className='text-sm font-medium p-2 rounded-sm flex items-center justify-center bg-[#FFFAB4] text-[#1f1f1f]'
                 >
-                  <Image src={project.icon} alt={project.alt} className='w-4' />
-                  View Code
+                  {/* <Image src={project.icon} alt={project.alt} className='w-4' /> */}
+                  View code
                 </a>
               </div>
             </div>
