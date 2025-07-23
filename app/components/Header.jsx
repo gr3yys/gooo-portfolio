@@ -22,7 +22,7 @@ return (
       style={{ backgroundImage: `url(${assets.header_img.src})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-10 z-0" />
+      <div className="absolute inset-0 bg-black opacity-40 z-0" />
 
       {/* Text */}
       <div className="relative z-10 text-center md:text-left px-4 max-w-3xl flex flex-col items-center md:items-start md:ml-24">
