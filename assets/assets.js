@@ -18,6 +18,7 @@ import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
 import social_icon from './social-icon.png';
+import linkedin from './linkedin.png';
 import phone_icon from './phone-icon.png';
 import react from './react.svg';
 import merit_2022 from './merit-cert-2022.png';
@@ -25,7 +26,8 @@ import merit_2023 from './merit-cert-2023.png';
 import merit_2024 from './merit-cert-2024.png';
 import cybersecurity_cert from './cybersecurity-cert.png';
 import ai_cert from './ai-cert.png';
-import github from './github-icon.png';
+import github_icon from './github-icon.png';
+import github from './github.png';
 import html_icon from './html-5.png';
 import css_icon from './css-3.png';
 import js_icon from './js.png';
@@ -63,6 +65,7 @@ export const assets = {
     close_black,
     close_white,
     social_icon,
+    linkedin,
     phone_icon,
     react,
     merit_2022,
@@ -70,6 +73,7 @@ export const assets = {
     merit_2024,
     cybersecurity_cert,
     ai_cert,
+    github_icon,
     github,
     html_icon,
     css_icon,

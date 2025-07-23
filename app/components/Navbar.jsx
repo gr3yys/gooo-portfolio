@@ -23,10 +23,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Navigation Bar */}
-      <nav
-        className="w-full bg-[#1f1f1f] fixed px-5 lg:px-8 xl:px-[8%]
-        flex items-center justify-between z-50"
-      >
+      <nav className="w-full absolute px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50">
         {/* Logo that links to the top of the page */}
         <a href="#top">
           <Image
@@ -54,7 +51,7 @@ const Navbar = () => {
           {/* Contact button visible only on large screens */}
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5
+            className="hidden lg:flex items-center gap-3 px-8 py-2
             rounded-full ml-4 text-[#1f1f1f] bg-[#FFFAB4]"
           >
             Contact

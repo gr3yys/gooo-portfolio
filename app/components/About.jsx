@@ -10,9 +10,9 @@ const about = {
 const About = () => {
   return (
     <div
-      id='about'
       className='h-auto w-full px-4 sm:px-8 md:px-12 scroll-mt-20 py-10'
     >
+      <span id='about'></span>
       {/* Section title */}
       <h2 className='text-center text-5xl my-20 tracking-wide'>About me</h2>
 
