@@ -16,7 +16,7 @@ const contactInfo = {
       icon: assets.phone_icon,
       alt: 'Phone Icon',
       title: 'Phone Number',
-      contact: '+1 787 317 9323',
+      contact: '+1 787 000 0000',
     },
     {
       icon: assets.social_icon,

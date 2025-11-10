@@ -5,7 +5,7 @@ import React from 'react';
 // assets used in header
 const intro = {
   items: {
-    name: 'Greychel Ocasio',
+    name: 'Grey Ocasio',
     occupation: 'Front-end developer',
     btn: 'Resume',
     icon: assets.download_icon,
